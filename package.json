@@ -4,7 +4,7 @@
   "description": "Project template configured with webpack for static, performant web page",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --output-public-path=/build/ --mode development --progress --open --hot",
+    "start": "webpack-dev-server --output-public-path=/public/ --mode development --progress --open --hot",
     "build": "webpack --mode production --progress",
     "build-prod": "cross-env NODE_ENV=production webpack --config webpack.config.js"
   },
