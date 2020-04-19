@@ -73,10 +73,10 @@ placeholders.forEach(image => {
   img.classList.add('card-img-top');
   img.classList.add('img-fluid');
   img.classList.add('lazy');
-  img.classList.add('fade');
   img.dataset.srcset = image.src;
   img.dataset.src = image.thumb;
-  img.src = 'public/img/namroud-gorguis-FZWivbri0Xk-unsplash.jpg';
+  // placeholder from awwwwards.com
+  img.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC';
   img.alt = image.alt;
 
   const cardBody = document.createElement('div');

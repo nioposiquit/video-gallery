@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
           let lazyImage = entry.target;
           lazyImage.src = lazyImage.dataset.src;
           lazyImage.srcset = lazyImage.dataset.srcset;
-          lazyImage.classList.add("show");
+          lazyImage.addEventListener("load", () => { lazyImage.classList.add("show"); })
           lazyImage.classList.remove("lazy");
           lazyImageObserver.unobserve(lazyImage);
         }
