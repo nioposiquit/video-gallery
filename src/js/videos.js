@@ -1,4 +1,3 @@
-const videosContainer = document.querySelector(".videos");
 const placeholders = [
   {
     name: 'Photo by Alphacolor on Unsplash',
@@ -56,6 +55,8 @@ const placeholders = [
   }
 ];
 
+const videosContainer = document.querySelector(".videos");
+
 placeholders.forEach(image => {
   const column = document.createElement('div');
   column.classList.add('col-md-4');
@@ -73,7 +74,7 @@ placeholders.forEach(image => {
   img.classList.add('card-img-top');
   img.classList.add('img-fluid');
   img.classList.add('lazy');
-  img.dataset.srcset = image.src;
+  img.dataset.hdSrc = image.src;
   img.dataset.src = image.thumb;
   // placeholder from awwwwards.com
   img.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC';

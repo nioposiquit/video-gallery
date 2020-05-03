@@ -53,7 +53,8 @@ footer p {
 
 .banner {
   position: relative;
-  &-container { height: 80vh; }
+  &-container,
+  &-vid { height: 80vh; }
   &-bg {
     position: absolute;
     top: 0;
